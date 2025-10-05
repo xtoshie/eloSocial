@@ -2,6 +2,7 @@
 
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)]()
 [![HTML](https://img.shields.io/badge/feito%20com-HTML5-orange)]()
+[![CSS](https://img.shields.io/badge/feito%20com-CSS3-blueviolet)]()
 [![JavaScript](https://img.shields.io/badge/feito%20com-JavaScript-blue)]()
 
 > 📚 **Este projeto é parte do meu curso de graduação em Analise e Desenvolvimente de Sistemas.**  
