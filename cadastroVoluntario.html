@@ -7,63 +7,73 @@
 </head>
 <body>
     <div id="menu"></div>
-    <h1>Cadastro de Voluntário</h1>
-    <p>🙋‍♀️ Como ser um voluntário na Elo Social</p>
-    <p>Você ama animais e quer fazer a diferença? Na Elo Social, acreditamos que cada gesto conta — e que juntos podemos transformar vidas. Ser voluntário é mais do que doar tempo: é criar elos de afeto, cuidado e esperança.</p>
-    <p>🐾 O que um voluntário pode fazer:</p>
-    <ul>
-        <li>Ajudar nos resgates: acompanhar operações e garantir segurança dos animais.</li>
-        <li>Oferecer lar temporário: acolher um pet até que ele esteja pronto para adoção.</li>
-        <li>Participar das feiras de adoção: ajudar na organização, recepção e cuidado dos animais.</li>
-        <li>Contribuir com transporte: levar animais a consultas, feiras ou novos lares.</li>
-        <li>Apoiar nas redes sociais: criar conteúdo, divulgar campanhas e histórias de sucesso.</li>
-        <li>Atuar em ações educativas: visitar escolas e eventos para falar sobre guarda responsável.</li>
-    </ul>
-    <p>📋 Requisitos para ser voluntário:</p>
-    <ul>
-        <li>Ter mais de 18 anos (ou autorização dos responsáveis, se menor).</li>
-        <li>Amar animais e respeitar seus limites.</li>
-        <li>Ter disponibilidade mínima de algumas horas por mês.</li>
-        <li>Participar de uma reunião de integração com nossa equipe.</li>
-    </ul>
-    <p>✍️ Como se inscrever:</p>
-    <p>Preencha o formulário de voluntariado disponível em nosso site. Nossa equipe entrará em contato para agendar uma conversa e entender como você pode contribuir da melhor forma.</p>
-    <p>“Não é preciso muito para mudar uma vida. Às vezes, só um coração disposto.”</p>
 
+    <section>
+        <h1>Cadastro de Voluntário</h1>
+            <p>🙋‍♀️ Como ser um voluntário na Elo Social</p>
+            <p>Você ama animais e quer fazer a diferença? Na Elo Social, acreditamos que cada gesto conta — e que juntos podemos transformar vidas. Ser voluntário é mais do que doar tempo: é criar elos de afeto, cuidado e esperança.</p>
+            <p>🐾 O que um voluntário pode fazer:</p>
+            <ul>
+                <li>Ajudar nos resgates: acompanhar operações e garantir segurança dos animais.</li>
+                <li>Oferecer lar temporário: acolher um pet até que ele esteja pronto para adoção.</li>
+                <li>Participar das feiras de adoção: ajudar na organização, recepção e cuidado dos animais.</li>
+                <li>Contribuir com transporte: levar animais a consultas, feiras ou novos lares.</li>
+                <li>Apoiar nas redes sociais: criar conteúdo, divulgar campanhas e histórias de sucesso.</li>
+                <li>Atuar em ações educativas: visitar escolas e eventos para falar sobre guarda responsável.</li>
+            </ul>
+            <p>📋 Requisitos para ser voluntário:</p>
+            <ul>
+                <li>Ter mais de 18 anos (ou autorização dos responsáveis, se menor).</li>
+                <li>Amar animais e respeitar seus limites.</li>
+                <li>Ter disponibilidade mínima de algumas horas por mês.</li>
+                <li>Participar de uma reunião de integração com nossa equipe.</li>
+            </ul>
+            <p>✍️ Como se inscrever:</p>
+            <p>Preencha o formulário de voluntariado disponível em nosso site. Nossa equipe entrará em contato para agendar uma conversa e entender como você pode contribuir da melhor forma.</p>
+            <p>“Não é preciso muito para mudar uma vida. Às vezes, só um coração disposto.”</p>
+    </section>
 
+    <section>   <!--Formulário de cadastro-->
+        <form action="submitCadastro.html" method="POST">   <!--A tag <form> cria um formulário e os atributos action e method definem para onde os dados serão enviados e o método de envio-->
+             <!--O atributo action define a URL para onde os dados do formulário serão enviados quando o usuário clicar no botão de envio. O atributo method define o método HTTP a ser usado ao enviar os dados do formulário. "POST" é usado para enviar dados que podem alterar o estado do servidor, como em cadastros ou envios de formulários.-->
+             <!--Dentro do formulário, temos vários campos de entrada (input) para coletar informações do usuário, como nome, email, telefone e área de interesse. Cada campo é acompanhado por um rótulo (label) para melhor acessibilidade. O botão de envio (button) permite que o usuário envie os dados preenchidos no formulário.-->
+            <div>   <!--Div para agrupar o campo de nome-->
+                <label for="nome">Nome:</label><br> <!--A tag <label> é usada para definir um rótulo para o campo de entrada. O atributo for associa o rótulo ao campo de entrada correspondente, melhorando a acessibilidade. A tag <br> insere uma quebra de linha para separar o rótulo do campo de entrada.-->
+                <input type="text" id="nome" name="nome" required>  <!--A tag <input> cria um campo de entrada de texto. O atributo type define o tipo de entrada (neste caso, texto). Os atributos id e name são usados para identificar o campo e associá-lo ao rótulo. O atributo required torna o preenchimento deste campo obrigatório antes do envio do formulário.-->
+            </div>
+            
+            <div>   <!--Div para agrupar o campo de email-->
+                <label for="email">Email:</label><br> 
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            
+            <div>
+                <label for="area">Área de Interesse:</label><br>
+                <select id="area" name="area">  <!--A tag <select> cria um menu suspenso (dropdown) que permite ao usuário escolher uma opção entre várias disponíveis. O atributo id é usado para identificar o campo, e o atributo name define o nome do campo que será enviado quando o formulário for submetido.-->
+                     <!--Dentro da tag <select>, cada opção disponível é definida pela tag <option>. O atributo value em cada <option> especifica o valor que será enviado ao servidor se essa opção for selecionada. O texto entre as tags <option> é o que o usuário verá no menu suspenso.-->
+                    <option value="resgate">Resgate</option>    <!--Área de interesse: Resgate-->
+                    <option value="cuidados">Cuidados Veterinários</option> <!--Área de interesse: Cuidados Veterinários-->
+                    <option value="educacao">Educação e Conscientização</option> <!--Área de interesse: Educação e Conscientização-->
+                </select>
+            </div>
+            
+            <div>
+                <button type="submit">Cadastrar</button>    <!--A tag <button> cria um botão clicável. O atributo type define o tipo do botão, que neste caso é "submit", indicando que o botão enviará os dados do formulário quando clicado.-->
+            </div>
+        </form>
+    </section>
 
-
-
-    <form action="submitCadastro.html" method="POST">
-        <div>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required>
-        </div>
-        
-        <div>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div>
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone" required>
-        </div>
-        
-        <div>
-            <label for="area">Área de Interesse:</label><br>
-            <select id="area" name="area">
-                <option value="resgate">Resgate</option>
-                <option value="cuidados">Cuidados Veterinários</option>
-                <option value="educacao">Educação e Conscientização</option>
-            </select>
-        </div>
-        
-        <div>
-            <button type="submit">Cadastrar</button>
-        </div>
-    </form>
-
+    <footer> <!--Rodapé da página-->
+        <p>&nbsp;</p> <!--Espaço em branco para separar o conteúdo do rodapé-->
+        <p><strong>Elo Social:</strong> Conectando boas ações a grandes causas.</p> <!--Descrição da ONG no rodapé-->
+        <p>&copy; 2025 Plataforma ONGs</p> <!--Direitos autorais-->
+    </footer>
+    
     <script src="javaScript/menu.js"></script>
 </body>
 </html>
