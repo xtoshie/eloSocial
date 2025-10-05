@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntário - Elo Social</title>
+</head>
+<body>
+    <div id="menu"></div>
+    <h1>Cadastro de Voluntário</h1>
+    <p>🙋‍♀️ Como ser um voluntário na Elo Social</p>
+    <p>Você ama animais e quer fazer a diferença? Na Elo Social, acreditamos que cada gesto conta — e que juntos podemos transformar vidas. Ser voluntário é mais do que doar tempo: é criar elos de afeto, cuidado e esperança.</p>
+    <p>🐾 O que um voluntário pode fazer:</p>
+    <ul>
+        <li>Ajudar nos resgates: acompanhar operações e garantir segurança dos animais.</li>
+        <li>Oferecer lar temporário: acolher um pet até que ele esteja pronto para adoção.</li>
+        <li>Participar das feiras de adoção: ajudar na organização, recepção e cuidado dos animais.</li>
+        <li>Contribuir com transporte: levar animais a consultas, feiras ou novos lares.</li>
+        <li>Apoiar nas redes sociais: criar conteúdo, divulgar campanhas e histórias de sucesso.</li>
+        <li>Atuar em ações educativas: visitar escolas e eventos para falar sobre guarda responsável.</li>
+    </ul>
+    <p>📋 Requisitos para ser voluntário:</p>
+    <ul>
+        <li>Ter mais de 18 anos (ou autorização dos responsáveis, se menor).</li>
+        <li>Amar animais e respeitar seus limites.</li>
+        <li>Ter disponibilidade mínima de algumas horas por mês.</li>
+        <li>Participar de uma reunião de integração com nossa equipe.</li>
+    </ul>
+    <p>✍️ Como se inscrever:</p>
+    <p>Preencha o formulário de voluntariado disponível em nosso site. Nossa equipe entrará em contato para agendar uma conversa e entender como você pode contribuir da melhor forma.</p>
+    <p>“Não é preciso muito para mudar uma vida. Às vezes, só um coração disposto.”</p>
+
+
+
+
+
+    <form action="submitCadastro.html" method="POST">
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" required>
+        </div>
+        
+        <div>
+            <label for="area">Área de Interesse:</label><br>
+            <select id="area" name="area">
+                <option value="resgate">Resgate</option>
+                <option value="cuidados">Cuidados Veterinários</option>
+                <option value="educacao">Educação e Conscientização</option>
+            </select>
+        </div>
+        
+        <div>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+
+    <script src="javaScript/menu.js"></script>
+</body>
+</html>
